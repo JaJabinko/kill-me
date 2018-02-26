@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<style>
+    ul { /*This sets the design for the unsoted list*/
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 10%;
+        background-color: #97C0CE;
+        height: 100%; /*This makes the navigation bar the full height of the screen*/
+        position: fixed; /*This makes it stick to the side of the screen, even when scroling*/
+        overflow: auto; /*This enables scroling if the bar has to much content*/
+    }
+
+    li a { /*This sets the design for each list item*/
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-family: "Roboto" /*This sets the Font as Roboto*/
+    }
+
+        li a:hover { /* Change the link color on hover */
+            background-color: #74828F;
+            color: white;
+        }
+
+    .hide {
+        display: none;
+    }
+</style>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PC Value Checker</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script scr="dropbox_script.js"></script>
+    
+
+</head>
+
+
+
+<body>
+
+    <ul>
+        <li><a href="HtmlPage.html">Home</a></li>
+        <li><a href="page_1.html">Check Your PC Value</a></li>
+        <li><a href="page_2.html">PC Build Guides</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div style="margin-left:10%;padding:1px 16px;height:1000px;" />
+    <h2>page_1: Check Your PC Value</h2>
+
+    <div>
+        <select id="dropDownDest">
+            <optgroup id="optInt" label="-----Intel-----"></optgroup>
+            <optgroup id="optAmd" label="-----AMD-----"></optgroup>
+        </select>
+        <input type="button" id="btnSort" value=" sort by Abc... " />
+        <input type="button" id="btnSortPrice" value=" sort by Price " />
+    </div>
+
+    <div>
+        <select id="dropDownDest2"></select>
+        <input type="button" id="btnSort2" value=" sort by Abc... " />
+        <input type="button" id="btnSortPrice2" value=" sort by Price " />
+    </div>
+
+
+    <h3 id="drop1Label">
+        Total
+    </h3>
+
+    <div id="imghide" class="hide">
+        <img src="som img" />
+    </div>
+
+</body>
+
+</html>
